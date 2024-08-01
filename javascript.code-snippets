@@ -1,0 +1,19 @@
+{
+	"inter": {
+		"scope": "typescriptreact, typescript",
+		"prefix": "inter",
+		"body": ["interface Props { ", "\t${1}", "}"],
+		"description": "create a new interface",
+	},
+	"service": {
+		"scope": "javascript, typescript",
+		"prefix": "service",
+		"body": ["export const ${TM_FILENAME_BASE} = { ", "\t${1}", "}"],
+	},
+	"c": {
+		"scope": "javascriptreact, typescriptreact",
+		"prefix": "c",
+		"body": ["console.log(${1})"],
+		"description": "console.log",
+	}
+}

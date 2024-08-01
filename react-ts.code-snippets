@@ -1,0 +1,80 @@
+{
+	"React FC Component": {
+    "prefix": "rfce",
+    "body": [
+      "import React, { FC } from 'react';",
+      "",
+      "interface ${1:PropsT} {",
+      "  ${2}",
+      "}",
+      "",
+      "export const ${3:ComponentName}: FC<${1:PropsT}> = () => {",
+      "  return (",
+      "    <></>",
+      "  );",
+      "};"
+    ],
+    "description": "Создание экспортируемого функционального компонента с TypeScript"
+  },
+  "React Function Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${1:Props} {",
+      "  ${2:propName}: ${3:string};",
+      "}",
+      "",
+      "const ${4:ComponentName}: React.FC<${1:Props}> = ({ ${2:propName} }) => {",
+      "  return (",
+      "    <div>",
+      "      ${5}",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${4:ComponentName};"
+    ],
+    "description": "Создание функционального компонента с TypeScript"
+  },
+  "React useState": {
+    "prefix": "us",
+    "body": [
+      "const [${1:state}, set${2:State}] = useState<${3:type}>(${4:initialValue});"
+    ],
+    "description": "useState hook с TypeScript"
+  },
+  "React useEffect": {
+    "prefix": "ue",
+    "body": [
+      "useEffect(() => {",
+      "  ${1}",
+      "  return () => {",
+      "    ${2}",
+      "  };",
+      "}, [${3}]);"
+    ],
+    "description": "useEffect hook"
+  },
+  "React useContext": {
+    "prefix": "uc",
+    "body": [
+      "const ${1:contextValue} = useContext(${2:Context});"
+    ],
+    "description": "useContext hook"
+  },
+  "React useReducer": {
+    "prefix": "ur",
+    "body": [
+      "const [${1:state}, dispatch] = useReducer(${2:reducer}, ${3:initialState});"
+    ],
+    "description": "useReducer hook"
+  },
+  "React useRef": {
+    "prefix": "urf",
+    "body": [
+      "const ${1:refName} = useRef<${2:HTMLDivElement | null}>(null);"
+    ],
+    "description": "useRef hook"
+  }
+}
